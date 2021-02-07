@@ -1,0 +1,46 @@
+.header, .header2{
+	min-width: 768px;
+	height: 96px;
+	margin-bottom:32px;
+	left:0;
+	top:0;
+	display:flex;
+	align-items: center;
+	padding:0 32px;
+	border-bottom:#E1E1E1 1px solid;
+}
+
+.header2{
+	margin-bottom:0;
+}
+
+.logo{
+	width: 66px;
+	height: 40px;
+	mask: url(/images/logo-idz.svg) no-repeat;
+	background-color:#000;
+	background-repeat: no-repeat;
+	display: inline-flex;
+}
+
+.logo:hover{
+	cursor:pointer;
+}
+
+.header ul, .header2 ul{
+	margin-top:16px;
+	display: inline-flex;
+}
+.header li, .header2 li{
+	display: inline-flex;
+	margin:0 12px;
+}
+
+.header li:last-child, .header2 li:last-child{
+	margin:0px;
+}
+
+.menuComprar{
+	text-align: right;
+	width: 100%;
+}

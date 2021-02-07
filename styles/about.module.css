@@ -1,0 +1,66 @@
+.content, .leadershipList{
+	margin-left:calc(33.33% + 8px);
+}
+
+.services{
+	display: flex;
+}
+
+.services ul:first-child{
+	margin-right: 24px;
+}
+
+.services ul, .leadershipList ul{
+	margin: 0;
+	padding: 0;
+	width: 50%;
+}
+
+.services li, .leadershipList li{
+	list-style: none;
+	border-bottom:rgba(0,0,0,0.1) 1px solid;
+	padding:24px 0;
+}
+
+.services li:last-child, .leadershipList li:last-child{
+	border:none;
+	padding-bottom:0;
+}
+
+
+.leadershipPics{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.leadershipPics div{
+	max-width:411px;
+	margin-bottom:24px;
+}
+
+.leadershipPics img{
+	max-width: 411px;
+	height: auto;
+}
+
+.leadershipName{
+	margin-top:12px;
+	display: block;
+}
+
+.leadershipRole{
+	display: block;
+	font-size: 12px;
+}
+
+.leadershipList ul{
+	width:100%;
+}
+
+.leadershipList li span:first-child{
+	display: inline-block;
+	width:50%;
+}
+

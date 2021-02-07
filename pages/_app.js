@@ -1,7 +1,20 @@
-import '../styles/globals.css'
+import '../styles/bootstrap/bootstrap.css'
+import '../styles/bootstrap/bootstrap-reboot.css'
+import '../styles/bootstrap/bootstrap-utilities.css'
+import '../styles/bootstrap/bootstrap-grid.css'
+import '../styles/global.css'
+import React from 'react'
+import App from 'next/app'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+
+
+export default class MyApp extends App {
+  render() {
+    const { Component, pageProps } = this.props;
+    return (
+      <div>
+          <Component {...pageProps} />
+      </div>
+    )
+  }
 }
-
-export default MyApp
