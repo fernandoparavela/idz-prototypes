@@ -2,7 +2,7 @@ import Head from 'next/head'
 import React, {useEffect} from "react";
 import Header from '../components/header-global.js'
 import Footer from '../components/footer-global.js'
-
+import Styles from '../styles/home.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import Helmet from 'react-helmet'
