@@ -2,7 +2,7 @@ import Head from 'next/head'
 import React, {useEffect} from "react";
 import Header from '../components/header-global.js'
 import Footer from '../components/footer-global.js'
-import Home from '../styles/home.module.css'
+import Styles from '../styles/home.module.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import Helmet from 'react-helmet'
@@ -28,10 +28,10 @@ export default function Home() {
       setToggle(!isToggled);
 
       if(isToggled==false){   
-        document.getElementById("accordion-pd").classList.add(Home.estoqueOpenState);     
+        document.getElementById("accordion-pd").classList.add(Styles.estoqueOpenState);     
         document.getElementById("chevron-list").style.transform = "rotate(-180deg)"
       }else{
-        document.getElementById("accordion-pd").classList.remove(Home.estoqueOpenState);
+        document.getElementById("accordion-pd").classList.remove(Styles.estoqueOpenState);
         document.getElementById("chevron-list").style.transform = "rotate(0deg)"
       }
   }
@@ -50,14 +50,14 @@ export default function Home() {
 
 
       <div className="container-fluid">
-        <section className={Home.heroTeste3} data-aos="fade-in">
+        <section className={Styles.heroTeste3} data-aos="fade-in">
         <div>
             <img src="../../images/pop/pop-cover.jpg"/>
           </div>
-          <div className={Home.heroContainer}>
-            <div className={Home.intro}>
+          <div className={Styles.heroContainer}>
+            <div className={Styles.intro}>
                 
-                <div className={Home.info}>
+                <div className={Styles.info}>
                     <h1>POP GRAFITE</h1>
                     <p class="text-sm">
                     Lançamento · Vila Madalena<br/>
@@ -66,11 +66,11 @@ export default function Home() {
                         Arquitetura Triptyque
                     </b>
                     </p>
-                    <p className={Home.claim}>
+                    <p className={Styles.claim}>
                     O studio perfeito da Idea!Zarvos, com muita luz natural e arquitetura assinada por Tripiyque.
                     </p>
-                    <div className={Home.estoque} id="accordion-pd">
-                    <div className={Home.heading} onClick={toggleState} id="list-heading">
+                    <div className={Styles.estoque} id="accordion-pd">
+                    <div className={Styles.heading} onClick={toggleState} id="list-heading">
                         <span>
                         Plantas disponíveis
                         </span>
@@ -95,7 +95,7 @@ export default function Home() {
                         </div>
                         <img src="../../images/icon/plus.svg" class="icon list"/>
                         </li>
-                        <li className={Home.seeMore}>
+                        <li className={Styles.seeMore}>
                         <div>
                             <span><span>Ver todas as plantas</span></span>
                         </div>
@@ -104,7 +104,7 @@ export default function Home() {
                     </ul>
                     </div>
                 </div>
-                <div className={Home.action}>
+                <div className={Styles.action}>
                 <div class="btn filled">
                     Contato
                 </div>
@@ -134,7 +134,7 @@ export default function Home() {
           </section>
 
           <section>
-            <div className={Home.mosaic3} data-aos="fade-in">
+            <div className={Styles.mosaic3} data-aos="fade-in">
               <img src="../../images/pop/pop-01.jpg"/>
               <img src="../../images/pop/pop-02.jpg"/>
               <img src="../../images/pop/pop-03.jpg"/>
@@ -154,7 +154,7 @@ export default function Home() {
           </section>
 
           <section data-aos="fade-in">
-            <div className={Home.mosaic4}>
+            <div className={Styles.mosaic4}>
               <img src="../../images/pop/pop-04.jpg"/>
               <img src="../../images/pop/pop-05.jpg"/>
               <img src="../../images/pop/pop-06.jpg"/>
@@ -165,7 +165,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className={Home.imgContainer} data-aos="fade-in">
+          <section className={Styles.imgContainer} data-aos="fade-in">
             <div class="col-6">
               <h3>
                 Arquitetura<br/>
@@ -175,12 +175,12 @@ export default function Home() {
                 Com foco em uma arquitetura global, a Triptyque Architecture explora as ferramentas que servem a um mundo contemporâneo e sustentável. É assim desde 2000, ano em que a brasileira Carolina Bueno e os franceses Greg Bousquet, Olivier Raffaelli e Guillaume Sibaud aterrissaram no Rio de Janeiro e mesclaram a bossa brasileira e a energia tropical à bagagem histórica adquirida no velho continente. 
               </span>
             </div>
-            <figure className={Home.figure + " col-6"}>
+            <figure className={Styles.figure + " col-6"}>
               <img src="../../images/pop/pop-08.jpg"/>
             </figure>
           </section>
 
-          <section className={Home.detail}>
+          <section className={Styles.detail}>
             <div class="col-6" data-aos="fade-in">
               <h3>
                 Plantas
@@ -239,7 +239,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className={Home.detail}>
+          <section className={Styles.detail}>
 
             <div class="col-6" data-aos="fade-in">
               <h3>
@@ -250,7 +250,7 @@ export default function Home() {
               </span>
             </div>
 
-            <div className={Home.fichaTecnica + " col-6"}>
+            <div className={Styles.fichaTecnica + " col-6"}>
               <ol data-aos="fade-in">
                 <li>
                   <div>
@@ -300,7 +300,7 @@ export default function Home() {
 
           </section>
 
-          <section className={Home.imgContainer}>
+          <section className={Styles.imgContainer}>
             <div class="col-6" data-aos="fade-in">
               <h3>
                 <b>Magazine</b><br/>
@@ -313,7 +313,7 @@ export default function Home() {
                 Ler no Magazine
               </div>
             </div>
-            <figure className={Home.figure + " col-6"} data-aos="fade-in">
+            <figure className={Styles.figure + " col-6"} data-aos="fade-in">
               <img src="../../images/pop/pop-09.jpg"/>
             </figure>
           </section>
