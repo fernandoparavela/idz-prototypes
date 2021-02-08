@@ -130,6 +130,9 @@ export default function Home() {
             <p>
               Todas os studios têm caixilhos piso-teto e varandas privativas que aumentam a área útil e criam amplitude e conexão com o exterior. Os arquitetos buscaram valorizar os studios com amplas janelas e ventilação direta, natural.
             </p>
+            <div class="btn ghost readmore">
+              <img src="../../images/icon/plus.svg" class="icon"/> Leia mais
+            </div>
           </section>
 
           <section>
@@ -150,6 +153,9 @@ export default function Home() {
             <p>
               Cores vivas inspiradas na cena movimentada da Vila ampliam a percepção de volume nos halls de acesso aos elevadores. O paisagismo de Rodrigo Oliveira extrapola as áreas internas e leva a energia do verde também para a calçada, potencializando a integração do edifício com o entorno. A fachada ativa no térreo é mais uma voz na conversa do POP Grafite com a cidade, gerando movimento e encontros. 
             </p>
+            <div class="btn ghost readmore">
+              <img src="../../images/icon/plus.svg" class="icon"/> Leia mais
+            </div>
           </section>
 
           <section data-aos="fade-in">
