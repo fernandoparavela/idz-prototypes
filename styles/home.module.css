@@ -6,6 +6,14 @@
 	justify-content: space-between;
 }
 
+.homeHero3{
+	display: inline-flex;
+	width:100%;
+	border-bottom: #E1E1E1 1px solid;
+	padding-bottom:32px;
+	margin-bottom:64px;
+}
+
 .heroTeste2{
 	background-color:#F6F6F6;
 	padding-bottom:0;
@@ -18,19 +26,33 @@
 	height: auto;
 }
 
-.hero p, .heroTeste2 p, .heroTeste3 p{
+.homeHero3 img{
+	height: calc(100vh - 160px);
+}
+
+.homeHero3{
+	height: calc(100vh - 128px);
+}
+
+
+.hero p, .heroTeste2 p, .heroTeste3 p, .homeHero3 p{
 	width: 100%;
 }
-.hero div.heroContainer, .heroTeste2 div.heroContainer{
+.hero div.heroContainer, .heroTeste2 div.heroContainer, .homeHero3 div.heroContainer{
 	width:50%;
 	margin-right:32px;
+}
+
+.homeHero3 div.heroContainer{
+	display: flex;
+	align-items:center;
 }
 
 .heroTeste3 div.heroContainer{
 	width:50%;
 }
 
-.hero h1, .heroTeste2 h1, .heroTeste3 h1{
+.hero h1, .heroTeste2 h1, .heroTeste3 h1, .homeHero3 h1{
 	margin-bottom:-24px;
 }
 
@@ -39,6 +61,8 @@
 	margin:auto;
 	padding:0 32px;
 }
+
+
 
 .heroTablet{
 	display:none;
@@ -133,7 +157,7 @@
 }
 
 .detail ol p{
-	margin-bottom:14px;
+	margin-bottom:15px;
 }
 
 .detail ol:nth-child(2){
@@ -160,7 +184,7 @@
 }
 
 .detail li b{
-	font-size: 14px;
+	font-size: 15px;
 }
 
 .detail li div{
@@ -199,7 +223,7 @@ figure.figure{
 	width:100%;
 	display: inline-flex;
 	justify-content: space-between;
-	font-size: 14px;
+	font-size: 15px;
 	opacity: 0.45;
 	padding:8px 0;
 
@@ -216,7 +240,7 @@ figure.figure{
 	list-style: none;
 	display: flex;
 	flex-direction: column;
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 1.4em!important;
 }
 
@@ -254,8 +278,62 @@ figure.figure{
 	transition: 0.6s cubic-bezier(.77,.17,.52,.9);
 }
 
+.homeHero{
+	border-bottom:#E1E1E1 1px solid;
+	margin-bottom:64px;
+}
+
+.homeHero div.homeInfo{
+	margin-top:-8px;
+	padding-bottom:64px
+}
+
+.homeHero p, .homeInfo2 p{
+	margin:8px 0;
+}
+
+.homeHero h1, .homeInfo2 h1{
+	margin:0;
+}
+
+.homeHero2{
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.homeImg{
+	position:absolute;
+	right:0;
+}
+
+
 @media (max-width:1023px){
 
+
+
+	.homeHero3{
+		height: auto;
+		border-bottom: #E1E1E1 1px solid;
+		padding-bottom:32px;
+		margin-bottom:48px;
+	}
+	
+	.homeImg{
+		position:relative;
+	}
+
+	.homeHero3 div.heroContainer{
+		width:100%;
+		padding-right:16px;
+	}
+
+	.homeHero3 img{
+		width:100%;
+		height: auto;
+	}
+
+		.h
 	
 	.hero, .heroTeste2{
 		display: flex;
@@ -277,7 +355,6 @@ figure.figure{
 		margin-top:32px;
 		margin-right:0;
 		padding:0;
-		
 	}
 
 	.heroTeste2 div.heroContainer{
@@ -340,3 +417,5 @@ figure.figure{
 	}
 
 }
+
+
