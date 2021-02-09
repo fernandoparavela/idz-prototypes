@@ -49,11 +49,11 @@ export default function Home() {
       <Header/>
 
 
-      <div className="container-fluid">
-        <section className={Styles.heroTeste3} data-aos="fade-in">
-        <div>
-            <img src="../../images/pop/pop-cover.jpg"/>
-          </div>
+      <div className="container-fluid nomargin">
+        <section className={Styles.heroTeste2} data-aos="fade-in">
+            <div>
+                <img src="../../images/pop/pop-cover.jpg"/>
+            </div>
           <div className={Styles.heroContainer}>
             <div className={Styles.intro}>
                 
@@ -125,9 +125,6 @@ export default function Home() {
             <h2>
               Perfeito porque fica entre a Vila Madalena e Pinheiros. Perfeito porque tem studios de 27m² a 36m² com muita luz natural. Perfeito porque tem piscina e academia na cobertura, e porque tem arquitetura assinada por Triptyque.
             </h2>
-            <div class="btn filled teaser">
-              <img src="../../images/icon/tour.svg" class="icon"/>Tour virtal
-            </div>
             <div class="btn outline teaser">
               <img src="../../images/icon/play.svg" class="icon"/>Assista ao teaser
             </div>
@@ -147,6 +144,9 @@ export default function Home() {
             </div>
             <div class="btn outline">
               <img src="../../images/icon/gallery.svg" class="icon"/>Galeria de imagens
+            </div>
+            <div class="btn">
+              <img src="../../images/icon/play.svg" class="icon"/>Assista ao tour virtal
             </div>
           </section>
 
@@ -171,6 +171,9 @@ export default function Home() {
             </div>
             <div class="btn outline">
               <img src="../../images/icon/gallery.svg" class="icon"/>Galeria de imagens
+            </div>
+            <div class="btn">
+              <img src="../../images/icon/play.svg" class="icon"/>Assista ao tour virtal
             </div>
           </section>
 
