@@ -105,12 +105,12 @@ export default function Home() {
                     </div>
                 </div>
                 <div className={Styles.action}>
-                <div class="btn filled">
-                    Contato
-                </div>
-                <div class="btn ghost">
-                    <img src="../../images/icon/share.svg" class="icon"/> Compartilhar
-                </div>
+                  <div class="btn filled">
+                      Contato
+                  </div>
+                  <div class="btn ghost">
+                      <img src="../../images/icon/share.svg" class="icon"/> Compartilhar
+                  </div>
               </div>
             </div>
           </div>
@@ -121,7 +121,7 @@ export default function Home() {
 
       <div class="container">
 
-        <section class="col-9" data-aos="fade-in">
+        <section class="col-8" data-aos="fade-in">
             <h2>
               Perfeito porque fica entre a Vila Madalena e Pinheiros. Perfeito porque tem studios de 27m² a 36m² com muita luz natural. Perfeito porque tem piscina e academia na cobertura, e porque tem arquitetura assinada por Triptyque.
             </h2>
@@ -150,7 +150,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section class="col-9" data-aos="fade-in">
+          <section class="col-8" data-aos="fade-in">
             <h2>
               A fachada se torna arte através da dinâmica entre os painéis metálicos perfurados e a intervenção artística de Andrés Sandoval, num diálogo com os grafites do Beco do Aprendiz, que fica atrás do POP Grafite.
             </h2>
@@ -177,12 +177,12 @@ export default function Home() {
           <section className={Styles.imgContainer} data-aos="fade-in">
             <div class="col-6">
               <h3>
-                Arquitetura<br/>
-                <b>Triptyque Architecture</b>
+                <b>Arquitetura</b><br/>
+                Triptyque Architecture
               </h3>
-              <span class="text-sm">
+              <p class="text-sm">
                 Com foco em uma arquitetura global, a Triptyque Architecture explora as ferramentas que servem a um mundo contemporâneo e sustentável. É assim desde 2000, ano em que a brasileira Carolina Bueno e os franceses Greg Bousquet, Olivier Raffaelli e Guillaume Sibaud aterrissaram no Rio de Janeiro e mesclaram a bossa brasileira e a energia tropical à bagagem histórica adquirida no velho continente. 
-              </span>
+              </p>
             </div>
             <figure className={Styles.figure + " col-6"}>
               <img src="../../images/pop/pop-08.jpg"/>
@@ -291,7 +291,7 @@ export default function Home() {
                       Arquitetura Triptyque
                     </span>
                   </div>
-                  <img src="../../images/icon/plus.svg" class="icon list"/>
+                  
                 </li> 
                 <li>
                   <div>

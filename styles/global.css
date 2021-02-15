@@ -30,6 +30,7 @@ body{
 	text-align: left;
 	font-family: '$hn-regular', 'Helvetica-Neue', 'Helvetica', Arial, sans-serif;
 	font-style: none;
+
 	
 }
 
@@ -48,7 +49,21 @@ h1,h2, h3{
 	line-height: 1.4em;
 	margin-bottom:24px;
 	-webkit-font-smoothing:antialiased;
+	display: inline-block;
 }
+
+h2, h3{
+	margin-bottom:0;
+}
+
+h3{
+	font-size: 28px;
+}
+
+sup{
+	font-size: 0.58em;
+}
+
 
 .text-sm{
 	font-size: 15px;
@@ -99,11 +114,11 @@ h1,h2, h3{
 }
 
 .readmore{
-	margin-top:-32px;
+	margin-top:-8px;
 }
 
 .teaser{
-	margin-top:0;
+	margin-top:32px;
 	margin-bottom:32px;
 }
 
@@ -128,9 +143,11 @@ section{
 	padding-bottom:64px;
 }
 
-section p{
-	width: 80%;
+section img{
+	width:100%;
 }
+
+
 
 @media (max-width:1023px){
 	section p{
