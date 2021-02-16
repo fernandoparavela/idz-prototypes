@@ -51,7 +51,7 @@ export default function Home() {
 
       <div className="container-fluid">
         <section className={Styles.heroTeste3} data-aos="fade-in">
-        <div>
+          <div>
             <img src="../../images/pop/pop-cover.jpg"/>
           </div>
           <div className={Styles.heroContainer}>
@@ -129,7 +129,7 @@ export default function Home() {
               <img src="../../images/icon/tour.svg" class="icon"/>Tour virtal
             </div>
             <div class="btn outline teaser">
-              <img src="../../images/icon/play.svg" class="icon"/>Assista ao teaser
+              <img src="../../images/icon/play.svg" class="icon"/>Teaser
             </div>
             <p>
               Todas os studios têm caixilhos piso-teto e varandas privativas que aumentam a área útil e criam amplitude e conexão com o exterior. Os arquitetos buscaram valorizar os studios com amplas janelas e ventilação direta, natural.
@@ -301,7 +301,7 @@ export default function Home() {
                   </div>
                   
                 </li>
-                <div class="btn ghost list">
+                <div class="btn ghost list" id={Styles.seemore}>
                   <img src="../../images/icon/plus.svg" class="icon"/> Ver todos os diferenciais e ficha técnica
                 </div>         
               </ol>

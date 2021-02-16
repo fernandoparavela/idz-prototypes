@@ -42,35 +42,36 @@ export default function Home() {
     <div>
 
       <Head>
-        <title>Pop Grafite · Idea!Zarvos</title>
+        <title>Hero Template 2 · Idea!Zarvos</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header/>
 
 
-      <div className="container-fluid">
+      <div className={Styles.homeHero + " container-fluid"}>
         <section className={Styles.heroTeste3} data-aos="fade-in">
         <div>
-            <img src="../../images/pop/pop-cover.jpg"/>
+            <img src="../../images/pop/ourania-cover.jpg"/>
           </div>
           <div className={Styles.heroContainer}>
             <div className={Styles.intro}>
                 
                 <div className={Styles.info}>
                     <div className={Styles.homeInfo2}>
-                        <p>Magazine</p>
-                        <h1>POP Grafite, o studio perfeito da Idea!Zarvos</h1>
+                        <p>Portfólio</p>
+                        <h1>Ourânia 231</h1>
                         <p>
-                        Em entrevista ao Magazine Idea!Zarvos, as arquitetas do Estúdio Penha falam sobre todos os elementos que compõem o decorado.
+                        Personalização ao extremo, das plantas à fachada, em um Idea!Zarvos de apenas oito apartamentos assinado por Marcio Kogan.
                         </p>
                     </div>
-                </div>
-                <div className={Styles.action}>
+                    
                     <div class="btn">
-                        Ir para o Magazine
+                        Conhecer este Idea!Zarvos
                     </div>
-              </div>
+                    
+                </div>
+               
             </div>
           </div>
           

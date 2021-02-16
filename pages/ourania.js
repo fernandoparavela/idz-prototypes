@@ -28,10 +28,10 @@ export default function Home() {
       setToggle(!isToggled);
 
       if(isToggled==false){   
-        document.getElementById("accordion-pd").classList.add(Styles.estoqueOpenStateOurania);     
+        document.getElementById("accordion-pd").classList.add(Styles.estoqueOpenStateNido);     
         document.getElementById("chevron-list").style.transform = "rotate(-180deg)"   
       }else{
-        document.getElementById("accordion-pd").classList.remove(Styles.estoqueOpenStateOurania);
+        document.getElementById("accordion-pd").classList.remove(Styles.estoqueOpenStateNido);
         document.getElementById("chevron-list").style.transform = "rotate(0deg)"  
       }
   }
@@ -42,7 +42,7 @@ export default function Home() {
     <div>
 
       <Head>
-        <title>Ourânia 231 · Idea!Zarvos</title>
+        <title>Nido · Idea!Zarvos</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -59,7 +59,7 @@ export default function Home() {
 
             <div className={Styles.heroContainer}>
                 
-                <div className={Styles.intro}>
+            <div className={Styles.intro}>
                     
                     <div className={Styles.info}>
                         <h1>OURÂNIA<sup> 231</sup></h1>
@@ -95,13 +95,13 @@ export default function Home() {
                         </div>
                     </div>
                     <div className={Styles.action}>
-                    <div class="btn filled">
-                        Contato
+                      <div class="btn filled">
+                          Contato
+                      </div>
+                      <div class="btn ghost">
+                          <img src="../../images/icon/share.svg" class="icon"/> Compartilhar
+                      </div>
                     </div>
-                    <div class="btn ghost">
-                        <img src="../../images/icon/share.svg" class="icon"/> Compartilhar
-                    </div>
-                </div>
                 </div>
             </div>
           
@@ -111,7 +111,7 @@ export default function Home() {
 
       <div class="container">
 
-        <section class="col-8" data-aos="fade-in">
+      <section class="col-8" data-aos="fade-in">
             <h2>
             Quem nunca encontrou o apartamento ideal, que atendesse a todas as expectativas, pode realizar esse sonho no Ourânia 231.
             </h2>

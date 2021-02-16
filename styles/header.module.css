@@ -21,6 +21,7 @@
 	background-color:#000;
 	background-repeat: no-repeat;
 	display: inline-flex;
+	margin-top:6px;
 }
 
 .logo:hover{
@@ -43,4 +44,28 @@
 .menuComprar{
 	text-align: right;
 	width: 100%;
+}
+
+.menuMobile{
+	display: none;
+	position: absolute;
+	right:32px;
+}
+
+
+
+@media (max-width:1023px){
+
+	.menuMobile{
+		display:inherit;
+	}
+
+	.menuGlobal{
+		display: none;
+	}
+
+	.menuComprar{
+		display: none;
+	}
+
 }

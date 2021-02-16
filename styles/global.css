@@ -29,9 +29,7 @@ body{
 	line-height: 1.5em;
 	text-align: left;
 	font-family: '$hn-regular', 'Helvetica-Neue', 'Helvetica', Arial, sans-serif;
-	font-style: none;
-
-	
+	font-style: none;	
 }
 
 p{
@@ -147,22 +145,16 @@ section img{
 	width:100%;
 }
 
-
-
-@media (max-width:1023px){
-	section p{
-		width: 100%;
-	}
-}
-
 .container-fluid{
 	/* min-width: 1024px; */
-	min-width: 768px;
+	/* min-width: 768px; */
+	min-width: 375px;
 }
 
 .container{
 	/* min-width: 1024px; */
-	min-width: 768px;
+	/* min-width: 768px; */
+	min-width: 375px;
 	max-width: 1080px;
 }
 
@@ -170,6 +162,60 @@ section img{
 	width: 100%;
 	margin: 0px!important;
 	padding: 0px!important;
+}
+
+
+@media (max-width:1023px){
+
+	section{
+		padding-bottom:48px;
+	}
+
+	section p{
+		width: 100%;
+	}
+
+	.col-6, .col-8{
+		width:100%;
+	}
+
+	body{
+		font-size: 16px;
+	}
+
+	p{
+		margin:16px 0;
+	}
+
+	h1, h2{
+		font-size: 28px;
+	}
+
+	h3{
+		font-size: 24px;
+	}
+
+	.text-sm, .btn{
+		font-size: 14px;
+	}
+
+	.container, .container-fluid{
+
+		padding:0 24px;
+	}
+
+	.btn{
+		margin-top:24px;
+	}
+
+	ol .btn{
+		margin-top:0;
+	}
+
+	.readmore{
+		margin-top:0px;
+	}
+	
 }
 
 

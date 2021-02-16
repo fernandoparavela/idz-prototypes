@@ -47,6 +47,9 @@ export default function Header(props){
 					<li>Alugar</li>
 				</ul>
 			</div>
+			<div className={headerStyles.menuMobile}>
+				<img src="../images/icon/menu.svg"/>
+			</div>
 		</div>
 	)
 }

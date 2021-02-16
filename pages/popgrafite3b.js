@@ -49,7 +49,7 @@ export default function Home() {
       <Header/>
 
 
-      <div className="container-fluid nomargin">
+      <div className={Styles.homeHero + " container-fluid nomargin"}>
         <section className={Styles.heroTeste2} data-aos="fade-in">
             <div>
                 <img src="../../images/pop/pop-cover.jpg"/>

@@ -147,7 +147,7 @@ export default function Home() {
             <img src="../../images/icon/tour.svg" class="icon"/>Tour virtal
           </div>
           <div class="btn outline teaser">
-            <img src="../../images/icon/play.svg" class="icon"/>Assista ao teaser
+            <img src="../../images/icon/play.svg" class="icon"/>Teaser
           </div>
           <p>
             Utilizando recursos precisos para suavizar seu volume, os arquitetos projetaram um prédio que se insere com delicadeza (e harmonia!) numa região em plena transformação. 

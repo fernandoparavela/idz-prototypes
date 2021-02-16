@@ -42,36 +42,37 @@ export default function Home() {
     <div>
 
       <Head>
-        <title>Pop Grafite · Idea!Zarvos</title>
+        <title>Hero Template 3 · Idea!Zarvos</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header/>
 
 
-      <div className="container-fluid">
-        <section className={Styles.homeHero3} data-aos="fade-in">
+      <div className={Styles.homeHero + " container-fluid"}>
+        <section className={Styles.homeHero4} data-aos="fade-in">
           
           <div className={Styles.heroContainer}>
             <div className={Styles.intro}>
                 
                 <div className={Styles.info}>
                     <div className={Styles.homeInfo2}>
-                        <p>Magazine</p>
-                        <h1>POP Grafite, o studio perfeito da Idea!Zarvos</h1>
+                        <p>Portfólio</p>
+                        <h1>
+                            Autem</h1>
                         <p>
-                        Em entrevista ao Magazine Idea!Zarvos, as arquitetas do Estúdio Penha falam sobre todos os elementos que compõem o decorado.
+                        Com arquitetura de Andrade Morettin e paisagismo tropical de Rodrigo Oliveira, o prédio tem vista para o verde do Jardim Europa e unidades duplex privilegiadas por muita luz e ventilação natural.
                         </p>
                     </div>
                     <div class="btn">
-                        Ir para o Magazine
+                    Conhecer este Idea!Zarvos
                     </div>
                 </div>
             </div>
           </div>
 
-          <div className={Styles.homeImg}>
-            <img src="../../images/home/home-02.jpg"/>
+          <div className={Styles.homeImgRight}>
+            <img src="../../images/pop/autem-cover.jpg"/>
           </div>    
 
         </section>

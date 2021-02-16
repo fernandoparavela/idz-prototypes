@@ -194,13 +194,13 @@ export default function Home() {
                         </div>
                     </div>
                     <div className={Styles.action}>
-                    <div class="btn filled">
-                        Contato
+                      <div class="btn filled">
+                          Contato
+                      </div>
+                      <div class="btn ghost">
+                          <img src="../../images/icon/share.svg" class="icon"/> Compartilhar
+                      </div>
                     </div>
-                    <div class="btn ghost">
-                        <img src="../../images/icon/share.svg" class="icon"/> Compartilhar
-                    </div>
-                </div>
                 </div>
             </div>
           
