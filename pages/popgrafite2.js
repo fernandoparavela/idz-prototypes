@@ -44,7 +44,7 @@ export default function Home() {
       <Head>
         <title>Pop Grafite · Idea!Zarvos</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
+        <meta name="viewport" content="width=device-width, minimun-scale=1, shrink-to-fit=no"></meta>
       </Head>
 
       <Header/>
