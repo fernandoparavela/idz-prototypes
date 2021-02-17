@@ -44,7 +44,7 @@ export default function Home() {
       <Head>
         <title>Harmonia 1040 · Idea!Zarvos</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="initial-scale=1.0, user-scalable=no"></meta>
+        <meta name="viewport" content="width=device-width, minimun-scale=1, shrink-to-fit=no"></meta>
       </Head>
 
       <Header/>
@@ -208,9 +208,9 @@ export default function Home() {
             <h2>
               Plantas
             </h2>
-            <p class="text-sm">
+            <span class="text-sm">
             Salas com amplos caixilhos e varanda generosa, que pode ser integrada, formando uma área social com mais de 21 metros lineares.
-            </p>
+            </span>
           </div>
           <div class="col-6">
             <ol data-aos="fade-in">
@@ -264,9 +264,9 @@ export default function Home() {
             <h2>
               Detalhamento
             </h2>
-            <p class="text-sm">
+            <span class="text-sm">
               A aparente simplicidade esconde raciocínios elaborados que serão descobertos aos poucos, como pequenas surpresas.
-            </p>
+            </span>
           </div>
 
           <div className={Styles.fichaTecnica + " col-6"}>

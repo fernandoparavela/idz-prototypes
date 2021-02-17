@@ -12,7 +12,7 @@ export default class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (
-      <div>
+      <div className="wrap">
           <Component {...pageProps} />
       </div>
     )

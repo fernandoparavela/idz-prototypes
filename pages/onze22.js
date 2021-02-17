@@ -209,9 +209,9 @@ export default function Home() {
             <h2>
               Plantas
             </h2>
-            <p class="text-sm">
+            <span class="text-sm">
             Duas torres independentes  (Home e Studio) com unidades modernas e funcionais e áreas comuns que trazem o urbano e a natureza para dentro.
-            </p>
+            </span>
           </div>
           <div class="col-6">
             <ol data-aos="fade-in">
@@ -265,9 +265,9 @@ export default function Home() {
             <h2>
               Detalhamento
             </h2>
-            <p class="text-sm">
+            <span class="text-sm">
             As transparências preservam a vista da praça em frente e trazem o verde para dentro. No rooftop tem piscina, spa, academia, sala de ginástica, sala de massagem, salão de festas, salão gourmet, lavanderia. E vistas extraordinárias.
-            </p>
+            </span>
           </div>
 
           <div className={Styles.fichaTecnica + " col-6"}>

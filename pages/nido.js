@@ -284,9 +284,9 @@ export default function Home() {
                 <b>Arquitetura</b><br/>
                 Triptyque Architecture
               </h3>
-              <span class="text-sm">
+              <p class="text-sm">
                 Com foco em uma arquitetura global, a Triptyque Architecture explora as ferramentas que servem a um mundo contemporâneo e sustentável. É assim desde 2000, ano em que a brasileira Carolina Bueno e os franceses Greg Bousquet, Olivier Raffaelli e Guillaume Sibaud aterrissaram no Rio de Janeiro e mesclaram a bossa brasileira e a energia tropical à bagagem histórica adquirida no velho continente. 
-              </span>
+              </p>
             </div>
             <figure className={Styles.figure + " col-6"}>
               <img src="../../images/arquitetura/brasilarquitetura.jpg"/>

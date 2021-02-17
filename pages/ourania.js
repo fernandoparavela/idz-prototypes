@@ -175,11 +175,11 @@ export default function Home() {
                 <b>Arquitetura</b><br/>
                 MK27
               </h3>
-              <span class="text-sm">
+              <p class="text-sm">
 
                   O Studio MK27 foi fundado no final dos anos 70 pelo arquiteto Marcio Kogan e hoje é composto por 35 integrantes e vários colaboradores pelo mundo afora. Os arquitetos da equipe, grandes admiradores da geração do modernismo brasileiro, procuram cumprir a tarefa de repensar e dar continuidade a esse icônico movimento arquitetônico. Os projetos do Studio MK27 valorizam a simplicidade formal e são elaborados com extrema atenção aos detalhes e acabamentos. 
 
-              </span>
+              </p>
             </div>
             <figure className={Styles.figure + " col-6"}>
               <img src="../../images/arquitetura/mk27.jpg"/>
