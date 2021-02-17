@@ -122,7 +122,7 @@ export default function Home() {
               <img src="../../images/icon/tour.svg" class="icon"/>Tour virtal
             </div>
             <div class="btn outline teaser">
-              <img src="../../images/icon/play.svg" class="icon"/>Assista ao teaser
+              <img src="../../images/icon/play.svg" class="icon"/>Teaser
             </div>
             <p>
             Sua planta totalmente flexível permite a cada morador definir a distribuição do espaço, configurando os ambientes de acordo com necessidades e desejos.

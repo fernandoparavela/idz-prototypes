@@ -221,7 +221,7 @@ export default function Home() {
               <img src="../../images/icon/tour.svg" class="icon"/>Tour virtal
             </div>
             <div class="btn outline teaser">
-              <img src="../../images/icon/play.svg" class="icon"/>Assista ao teaser
+              <img src="../../images/icon/play.svg" class="icon"/>Teaser
             </div>
             <p>
             Assim é o Nido, que não por acaso significa ninho em espanhol: um prédio composto por casas gostosas, acolhedoras, empilhadas uma sobre a outra. Apartamentos de 92 a 241m², com duas ou três suítes e duas a três vagas na garagem. Salas espaçosas com caixilhos do chão ao teto e terraço.
