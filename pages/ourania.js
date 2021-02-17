@@ -52,7 +52,7 @@ export default function Home() {
 
       <div className="container-fluid">
 
-        <section className={Styles.heroTeste3} id="hero" data-aos="fade-in">
+        <section className={Styles.heroTeste3 + " heroEmpreendimento"} id="hero" data-aos="fade-in">
 
             <div className={Styles.imgHero}>
                 <img src="../../images/ourania/ourania-cover.jpg"/>

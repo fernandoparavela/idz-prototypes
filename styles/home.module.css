@@ -91,6 +91,12 @@
 
 .heroTeste4{
 	margin-bottom:32px;
+	padding-bottom:0!important;
+}
+
+.heroTeste3{
+	padding-bottom:32px!important;
+	
 }
 
 .intro{

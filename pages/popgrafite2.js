@@ -51,7 +51,7 @@ export default function Home() {
 
 
       <div className="container-fluid">
-        <section className={Styles.heroTeste3} data-aos="fade-in">
+        <section className={Styles.heroTeste3 + " heroEmpreendimento"} data-aos="fade-in">
           <div>
             <img src="../../images/pop/pop-cover.jpg" className={Styles.heroImg}/>
           </div>
