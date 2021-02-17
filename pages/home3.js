@@ -44,6 +44,7 @@ export default function Home() {
       <Head>
         <title>Hero Template 3 · Idea!Zarvos</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="initial-scale=1.0"></meta>
       </Head>
 
       <Header/>
@@ -72,7 +73,7 @@ export default function Home() {
           </div>
 
           <div className={Styles.homeImgRight}>
-            <img src="../../images/pop/autem-cover.jpg"/>
+            <img src="../../images/pop/autem-cover.jpg" className={Styles.heroImg}/>
           </div>    
 
         </section>

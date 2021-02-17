@@ -44,6 +44,7 @@ export default function Home() {
       <Head>
         <title>Onze 22 · Idea!Zarvos</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no"></meta>
       </Head>
 
       <Header/>
@@ -59,10 +60,14 @@ export default function Home() {
 
           <div className={Styles.heroContainer}>
             
-             <div className={Styles.intro}>
+            <div className={Styles.intro}>
                 
               <div className={Styles.info}>
                     <h1>ONZE <sup>22</sup></h1>
+                    <br/>
+                    <span className={Styles.claim}>
+                    Morar nunca foi tão moderno.
+                    </span>
                     <p class="text-sm">
                     Em obras · Vila Madalena<br/>
                     <b>
@@ -70,9 +75,7 @@ export default function Home() {
                         Arquitetura Triptyque
                     </b>
                     </p>
-                    <p className={Styles.claim}>
-                    Morar nunca foi tão moderno.
-                    </p>
+                    
                     <div className={Styles.estoque} id="accordion-pd">
                     <div className={Styles.heading} onClick={toggleState} id="list-heading">
                         <span>
@@ -116,22 +119,18 @@ export default function Home() {
                         <img src="../../images/icon/plus.svg" class="icon list"/>
                         </li>
                     </ul>
-                    </div>
                     <div className={Styles.action}>
-                  <div class="btn filled">
-                      Contato
-                  </div>
-                  <div class="btn ghost">
+                      <div class="btn filled">
+                        Contato
+                      </div>
+                      <div class="btn ghost">
                       <img src="../../images/icon/share.svg" class="icon"/> Compartilhar
+                      </div>
+                    </div>                   
                   </div>
               </div>
-                </div>
-                
-                
-
             </div>
-          </div> 
-        
+          </div>
         </section>
 
       </div>

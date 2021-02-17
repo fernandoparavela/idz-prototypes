@@ -44,6 +44,7 @@ export default function Home() {
       <Head>
         <title>Hero Template 2 · Idea!Zarvos</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="initial-scale=1.0"></meta>
       </Head>
 
       <Header/>
@@ -52,7 +53,7 @@ export default function Home() {
       <div className={Styles.homeHero + " container-fluid"}>
         <section className={Styles.heroTeste3} data-aos="fade-in">
         <div>
-            <img src="../../images/pop/ourania-cover.jpg"/>
+            <img src="../../images/pop/ourania-cover.jpg" className={Styles.heroImg}/>
           </div>
           <div className={Styles.heroContainer}>
             <div className={Styles.intro}>

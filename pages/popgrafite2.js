@@ -44,6 +44,7 @@ export default function Home() {
       <Head>
         <title>Pop Grafite · Idea!Zarvos</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no"></meta>
       </Head>
 
       <Header/>
@@ -52,13 +53,17 @@ export default function Home() {
       <div className="container-fluid">
         <section className={Styles.heroTeste3} data-aos="fade-in">
           <div>
-            <img src="../../images/pop/pop-cover.jpg"/>
+            <img src="../../images/pop/pop-cover.jpg" className={Styles.heroImg}/>
           </div>
           <div className={Styles.heroContainer}>
             <div className={Styles.intro}>
                 
                 <div className={Styles.info}>
                     <h1>POP GRAFITE</h1>
+                    <br/>
+                    <span className={Styles.claim}>
+                    O studio perfeito da Idea!Zarvos, com muita luz natural e arquitetura assinada por Tripiyque.
+                    </span>
                     <p class="text-sm">
                     Lançamento · Vila Madalena<br/>
                     <b>
@@ -66,9 +71,7 @@ export default function Home() {
                         Arquitetura Triptyque
                     </b>
                     </p>
-                    <p className={Styles.claim}>
-                    O studio perfeito da Idea!Zarvos, com muita luz natural e arquitetura assinada por Tripiyque.
-                    </p>
+                    
                     <div className={Styles.estoque} id="accordion-pd">
                     <div className={Styles.heading} onClick={toggleState} id="list-heading">
                         <span>

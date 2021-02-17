@@ -44,6 +44,7 @@ export default function Home() {
       <Head>
         <title>Nido · Idea!Zarvos</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no"></meta>
       </Head>
 
       <Header/>
@@ -63,6 +64,10 @@ export default function Home() {
                     
                     <div className={Styles.info}>
                         <h1>OURÂNIA<sup> 231</sup></h1>
+                        <br/>
+                        <span className={Styles.claim}>
+                            O apartamento que mora em você.    
+                        </span>
                         <p class="text-sm">
                         Em obras · Alto de Pinheiros<br/>
                         <b>
@@ -70,9 +75,7 @@ export default function Home() {
                             Arquitetura Marcio Kogan
                         </b>
                         </p>
-                        <p className={Styles.claim}>
-                            O apartamento que mora em você.    
-                        </p>
+                        
                         <div className={Styles.estoque} id="accordion-pd">
                         <div className={Styles.heading} onClick={toggleState} id="list-heading">
                             <span>
