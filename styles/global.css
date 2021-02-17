@@ -170,6 +170,10 @@ section img{
 
 @media (max-width:1023px){
 
+	body{
+		overflow-x: hidden;
+	}
+
 	.col-8{
 		width:90%;
 	}
@@ -199,16 +203,12 @@ section img{
 		width:100%;
 	}
 
-	body{
-		font-size: 16px;
-	}
-
 	p{
 		margin:16px 0 0 0;
 	}
 
 	h1, h2{
-		font-size: 28px;
+		font-size: 24px;
 	}
 
 	h3{
