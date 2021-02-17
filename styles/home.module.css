@@ -1,20 +1,14 @@
 
 
-.hero, .heroTeste2, .heroTeste3{
+.hero, .heroTeste2, .heroTeste3, .homeHero3{
 	display: inline-flex;
 	justify-content: space-between;
 }
 
-.homeHero3, .homeHero4{
+.homeHero4{
 	display: inline-flex;
 	width:100%;
 	padding-bottom:32px;
-}
-
-.heroTeste4{
-	display: inline-flex;
-	width:100%;
-	border-bottom:none;
 }
 
 .heroTeste2{
@@ -24,22 +18,26 @@
 	margin-top:-32px;
 }
 
-.hero img, .heroTeste2 img, .heroTeste3 img{
+.heroTeste4{
+	display: inline-flex;
+	width:100%;
+	border-bottom:none;
+	margin-bottom:32px;
+	padding-bottom:0!important;
+}
+
+.hero img, .heroTeste2 img, .heroTeste3 img, .homeHero3 img{
 	width: 100%;
 	height: auto;
 }
 
 .homeHero3 img{
-	height: calc(100vh - 160px);
+	margin-bottom:24px;
 }
 
 .homeHero4 img, .homeImgLeft img{
 	width:auto;
 	height: calc(133vh - 160px);
-}
-
-.homeHero3{
-	height: calc(100vh - 128px);
 }
 
 .homeHero4, .heroTeste4{
@@ -50,14 +48,9 @@
 	width: 100%;
 }
 
-.hero div.heroContainer, .heroTeste2 div.heroContainer, .homeHero3 div.heroContainer{
+.hero div.heroContainer, .heroTeste2 div.heroContainer{
 	width:50%;
 	margin-right:32px;
-}
-
-.homeHero3 div.heroContainer{
-	display: flex;
-	align-items:center;
 }
 
 .homeHero4 div.heroContainer{
@@ -84,21 +77,16 @@
 	margin-bottom:-24px;
 }
 
-.heroTeste3 div.heroContainer{
+.heroTeste3 div.heroContainer, .homeHero3 div.heroContainer{
 	width:50%;
 	margin:auto 0;
 }
 
-.heroTeste4{
-	margin-bottom:32px;
-	padding-bottom:0!important;
-}
-
-.heroTeste3{
+.heroTeste3, .homeHero3{
 	padding-bottom:32px!important
 }
 
-.heroTeste3 span.claim{
+.heroTeste3 span.claim, .homeHero3 span.claim{
 	display: block;
 	margin-top:4px;
 }
@@ -121,8 +109,6 @@
 	padding: 0 0 32px 0;
 }
 
-
-
 .mosaic2, .mosaic3, .mosaic3b, .mosaic4{
 	width:100%;
 	height:auto;
@@ -141,8 +127,6 @@
 	grid-column:3/5;
 	grid-row:1/5;
 }
-
-
 
 .mosaic3 img:nth-child(2){
 	grid-column:3/5;
@@ -178,7 +162,6 @@
 	grid-column:3/5;
 	grid-row:3/5;
 }
-
 
 .mosaic3 img, .mosaic3b img, .mosaic4 img{
 	width: 100%;
@@ -383,11 +366,9 @@ figure.figure{
 	opacity: 0.45;
 }
 
-
 .estoque li div{
 	width:100%;
 }
-
 
 .estoqueOpenState{
 	height:216px;
@@ -448,7 +429,6 @@ figure.figure{
 	top:32px;
 }
 
-
 @media (max-width:1280px){
 
 	.heroTeste4{
@@ -467,7 +447,6 @@ figure.figure{
 	.heroTeste4 div.heroContainer{
 		padding-left: 32px;
 	}
-
 	
 	.homeImgRight{
 		position:relative;
@@ -484,7 +463,7 @@ figure.figure{
 		margin-right:32px;
 	}
 	
-	.homeHero3, .homeHero4, .heroTeste4{
+	.homeHero4, .heroTeste4{
 		height: auto;
 		padding-bottom:32px;
 	}
@@ -494,19 +473,13 @@ figure.figure{
 		height: auto;
 	}
 
-	.homeHero3 div.heroContainer{
-		width:100%;
-		height: auto;
-		padding-right:32px;
-	}
-
 	.heroTeste4 div.heroContainer{
 		width:50%;
 		height: auto;
 		padding-right:32px;	
 	}
 
-	.homeHero3 img, .heroTeste4 img{
+	.heroTeste4 img{
 		width:100%;
 		height: auto;
 	}
@@ -520,20 +493,25 @@ figure.figure{
 		margin-top:-32px;
 	}
 
-	.heroTeste3{
+	.heroTeste3, .homeHero3{
 		display: flex;
 		flex-flow: wrap;
 	}
 
-	.hero div.heroContainer, .heroTeste2 div.heroContainer, .heroTeste3 div.heroContainer{
+	.hero div.heroContainer, .heroTeste2 div.heroContainer, .heroTeste3 div.heroContainer, .homeHero3 div.heroContainer{
 		width:100%;
 		margin-top:32px;
 		margin-right:0;
 		padding:0;
 	}
 
-	.heroTeste3 div.heroContainer{
+	.heroTeste3 div.heroContainer, .homeHero3 div.heroContainer{
 		width:80%;
+	}
+
+	.homeHero3 div.heroContainer{
+		padding-bottom:16px;
+		margin-top:16px;
 	}
 
 	.heroTeste2 div.heroContainer{
@@ -567,7 +545,7 @@ figure.figure{
 		margin-bottom:32px;
 	}
 
-	.heroTeste3 div.action{
+	.heroTeste3 div.action, .homeHero3 div.action{
 		padding:0;
 		position:absolute;
 		right:0;
@@ -576,14 +554,14 @@ figure.figure{
 		flex-direction: row-reverse;
 	}
 
-	.heroTeste3 div.action div{	
+	.heroTeste3 div.action div, .homeHero3 div.action div{	
 		margin-top:0;
 		margin-right:0;
 		margin-left:32px;
 	}
 
 
-	.heroTeste3 span.claim{
+	.heroTeste3 span.claim, .homeHero3 span.claim{
 		width:60%;
 		display: block;
 		margin-top:4px;
@@ -603,24 +581,28 @@ figure.figure{
 @media (max-width:767px){
 
 
-	.hero div img.heroImg, .heroTeste3 div img.heroImg{
+	.hero div img.heroImg, .heroTeste3 div img.heroImg, .homeHero3 div img.heroImg{
 		height:calc(100vw - 64px);
 		object-fit:cover;
 	}
 
+
 	.homeHero4{
 		display: flex;
-		flex-wrap: wrap;
+		flex-wrap: wrap-reverse;
 		top:0;
 		height:auto;
+		margin:0;
+		padding:0;
 	}
 
 	.homeHero4 div.heroContainer{
 		position:inherit;
+		margin-bottom:36px;
 	}
 
 	.homeImgRight{
-		margin-top:48px;
+		margin-bottom:24px;
 	}
 
 	.hero{
@@ -631,12 +613,7 @@ figure.figure{
 		padding:0;
 	}
 
-	.heroTeste3{
-		display:flex;
-		flex-direction: row;
-	}
-
-	.heroTeste3 div.heroContainer{
+	.heroTeste3 div.heroContainer, .homeHero3 div.heroContainer{
 		width:100%;
 		margin-top:24px;
 	}
@@ -646,7 +623,7 @@ figure.figure{
 		flex-direction: column;
 	}
 
-	.heroTeste3 div.action{
+	.heroTeste3 div.action, .homeHero3 div.action{
 		right:auto;
 		left:0;
 		margin-top:24px;
@@ -655,7 +632,7 @@ figure.figure{
 		flex-direction: row;
 	}
 
-	.heroTeste3 div.action div{
+	.heroTeste3 div.action div, .homeHero3 div.action div{
 		margin-left:0;
 		margin-right:24px;
 	}
@@ -702,23 +679,36 @@ figure.figure{
 		flex-direction: column-reverse;
 	}
 
-	.heroTeste3 span.claim, .heroTeste4 span.claim{
-		margin-top:4px;
-		display: block;
+	.homeHero3{
+		display: flex;
+		flex-direction: column;
 	}
 
-	.heroTeste3 div.heroContainer, .heroTeste4 div.heroContainer{
+	.heroTeste3 span.claim, .heroTeste4 span.claim, .homeHero3 span.claim{
+		margin-top:4px;
+		display: block;
+		width:90%;
+	}
+
+	.heroTeste3 div.heroContainer, .heroTeste4 div.heroContainer, .homeHero3 div.heroContainer{
 		width: 100%;
 		padding:0;
 		position: unset;
 		margin-bottom:24px;
 		margin-top:0;
+	}
 
+	.homeHero3 div.heroContainer{
+		margin-bottom:0;
 	}
 
 	.homeImgLeft{
 		width: 100%;
 		margin-bottom:24px;
+	}
+
+	.detail span, .imgContainer p{
+		width:105%;
 	}
 
 

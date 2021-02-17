@@ -188,7 +188,7 @@ section img{
 	}
 	
 	section{
-		padding-bottom:48px;
+		padding-bottom:40px;
 	}
 
 	section p{
@@ -204,7 +204,7 @@ section img{
 	}
 
 	p{
-		margin:16px 0;
+		margin:16px 0 0 0;
 	}
 
 	h1, h2{
@@ -220,7 +220,6 @@ section img{
 	}
 
 	.container, .container-fluid{
-
 		padding:0 24px;
 	}
 
@@ -234,6 +233,14 @@ section img{
 
 	.readmore{
 		margin-top:0px;
+	}
+
+	.col-8{
+		width:100%;
+	}
+
+	.col-8 p, .col-8 h2{
+		width:90%;
 	}
 	
 }

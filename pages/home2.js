@@ -51,9 +51,9 @@ export default function Home() {
 
 
       <div className={Styles.homeHero + " container-fluid"}>
-        <section className={Styles.heroTeste3} data-aos="fade-in">
+        <section className={Styles.homeHero3} data-aos="fade-in">
         <div>
-            <img src="../../images/pop/ourania-cover.jpg" className={Styles.heroImg}/>
+            <img src="../../images/ourania/ourania-cover.jpg" className={Styles.heroImg}/>
           </div>
           <div className={Styles.heroContainer}>
             <div className={Styles.intro}>
