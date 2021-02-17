@@ -3,11 +3,11 @@ import React, {useEffect} from "react";
 import Header from '../components/header-global.js'
 import Footer from '../components/footer-global.js'
 import Styles from '../styles/home.module.css'
-import AOS from 'aos';
-import 'aos/dist/aos.css'
 import Helmet from 'react-helmet'
 import Link from 'next/link'
 import { useState } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 
 export default function Home() {
