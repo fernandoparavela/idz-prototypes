@@ -5,14 +5,15 @@
 	justify-content: space-between;
 }
 
-.homeHero3, .homeHero4, .heroTeste4{
+.homeHero3, .homeHero4{
 	display: inline-flex;
 	width:100%;
 	padding-bottom:32px;
-
 }
 
 .heroTeste4{
+	display: inline-flex;
+	width:100%;
 	border-bottom:none;
 }
 
@@ -27,8 +28,6 @@
 	width: 100%;
 	height: auto;
 }
-
-
 
 .homeHero3 img{
 	height: calc(100vh - 160px);
@@ -90,6 +89,10 @@
 	margin:auto 0;
 }
 
+.heroTeste3, .heroTeste4{
+	margin-bottom:32px;
+	/* margin-bottom:64px; */
+}
 
 .intro{
 	width:412px;
@@ -429,7 +432,6 @@ figure.figure{
 	position: -webkit-sticky;
 	top:32px;
 }
-
 
 
 @media (max-width:1280px){

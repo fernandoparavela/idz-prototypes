@@ -58,10 +58,8 @@ export default function Home() {
             <img src="../../images/harmonia1040/harmonia1040-cover.jpg"/>
           </div> 
 
-          <div className={Styles.heroContainer}>
-            
-             <div className={Styles.intro}>
-                
+          <div className={Styles.heroContainer}>       
+             <div className={Styles.intro}>           
               <div className={Styles.info}>
                     <h1>HARMONIA <sup>1040</sup></h1>
                     <br/>
