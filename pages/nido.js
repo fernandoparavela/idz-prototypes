@@ -37,6 +37,16 @@ export default function Home() {
   }
 
   
+  useEffect(() => {    
+    window.addEventListener("scroll", function(){
+        if(window.scrollY > 400){
+            document.getElementById("floatHeader").classList.add(Styles.floatHeaderOpen);
+        }else{
+            document.getElementById("floatHeader").classList.remove(Styles.floatHeaderOpen);
+        }
+    });
+},);
+
   return (
 
     <div>
@@ -49,6 +59,18 @@ export default function Home() {
 
       <Header/>
 
+      <div className={Styles.floatHeader} id="floatHeader">
+        <div>NIDO</div>
+        <div>
+            
+            <div class="btn ghost">
+                <img src="../../images/icon/share.svg" class="icon"/>
+            </div>
+            <div class="btn filled">
+                Contato
+            </div>
+        </div>
+      </div>
 
       <div className="container-fluid">
 
@@ -282,10 +304,10 @@ export default function Home() {
             <div class="col-6">
               <h3>
                 <b>Arquitetura</b><br/>
-                Triptyque Architecture
+                Brasil Arquitetura
               </h3>
               <p class="text-sm">
-                Com foco em uma arquitetura global, a Triptyque Architecture explora as ferramentas que servem a um mundo contemporâneo e sustentável. É assim desde 2000, ano em que a brasileira Carolina Bueno e os franceses Greg Bousquet, Olivier Raffaelli e Guillaume Sibaud aterrissaram no Rio de Janeiro e mesclaram a bossa brasileira e a energia tropical à bagagem histórica adquirida no velho continente. 
+              A Brasil Arquitetura, criada em 1978, é uma associação de arquitetos liderada pelos sócios fundadores Francisco Fanucci e Marcelo Ferraz, ambos formados pela Faculdade de Arquitetura e Urbanismo da Universidade de São Paulo (FAU-USP). O escritório busca uma arquitetura atenta às “raízes e antenas”, ou seja, uma arquitetura criada a partir de profunda conexão com as bases culturais de cada lugar, mas sempre observando o presente e mirando o futuro. 
               </p>
             </div>
             <figure className={Styles.figure + " col-6"}>

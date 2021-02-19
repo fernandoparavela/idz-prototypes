@@ -28,27 +28,48 @@ export default function Home() {
       setToggle(!isToggled);
 
       if(isToggled==false){   
-        document.getElementById("accordion-pd").classList.add(Styles.estoqueOpenStateNido);     
+        document.getElementById("accordion-pd").classList.add(Styles.estoqueOpenStateOurania);     
         document.getElementById("chevron-list").style.transform = "rotate(-180deg)"   
       }else{
-        document.getElementById("accordion-pd").classList.remove(Styles.estoqueOpenStateNido);
+        document.getElementById("accordion-pd").classList.remove(Styles.estoqueOpenStateOurania);
         document.getElementById("chevron-list").style.transform = "rotate(0deg)"  
       }
   }
 
+  useEffect(() => {    
+    window.addEventListener("scroll", function(){
+        if(window.scrollY > 400){
+            document.getElementById("floatHeader").classList.add(Styles.floatHeaderOpen);
+        }else{
+            document.getElementById("floatHeader").classList.remove(Styles.floatHeaderOpen);
+        }
+    });
+},);
   
   return (
 
     <div>
 
       <Head>
-        <title>Nido · Idea!Zarvos</title>
+        <title>Ourânia 231 · Idea!Zarvos</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no"></meta>
       </Head>
 
       <Header/>
 
+      <div className={Styles.floatHeader} id="floatHeader">
+        <div>OURÂNIA <sup>231</sup></div>
+        <div>
+          <div class="btn ghost">
+                <img src="../../images/icon/share.svg" class="icon"/>
+            </div>
+            <div class="btn filled">
+                Contato
+            </div>
+           
+        </div>
+      </div>
 
       <div className="container-fluid">
 
@@ -155,17 +176,6 @@ export default function Home() {
             </p>
             <div class="btn ghost readmore">
               <img src="../../images/icon/plus.svg" class="icon"/> Leia mais
-            </div>
-          </section>
-
-          <section data-aos="fade-in">
-
-            <div>
-              <img src="../../images/ourania/ourania-04.jpg"/>
-            </div>
-
-            <div class="btn outline">
-              <img src="../../images/icon/gallery.svg" class="icon"/>Galeria de imagens
             </div>
           </section>
 

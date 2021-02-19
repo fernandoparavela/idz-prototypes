@@ -3,11 +3,11 @@ import React, {useEffect} from "react";
 import Header from '../components/header-global.js'
 import Footer from '../components/footer-global.js'
 import Styles from '../styles/home.module.css'
-import AOS from 'aos';
-import 'aos/dist/aos.css'
 import Helmet from 'react-helmet'
 import Link from 'next/link'
 import { useState } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 
 export default function Home() {
@@ -37,6 +37,16 @@ export default function Home() {
   }
 
   
+  useEffect(() => {    
+    window.addEventListener("scroll", function(){
+        if(window.scrollY > 400){
+            document.getElementById("floatHeader").classList.add(Styles.floatHeaderOpen);
+        }else{
+            document.getElementById("floatHeader").classList.remove(Styles.floatHeaderOpen);
+        }
+    });
+},);
+
   return (
 
     <div>
@@ -44,21 +54,38 @@ export default function Home() {
       <Head>
         <title>Pop Grafite · Idea!Zarvos</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, minimun-scale=1, shrink-to-fit=no"></meta>
       </Head>
 
       <Header/>
 
-
-      <div className={Styles.homeHero + " container-fluid nomargin"}>
-        <section className={Styles.heroTeste2} data-aos="fade-in">
-            <div>
-                <img src="../../images/pop/pop-cover.jpg"/>
+      <div className={Styles.floatHeader} id="floatHeader">
+        <div>POP GRAFITE</div>
+        <div>
+           <div class="btn ghost">
+                <img src="../../images/icon/share.svg" class="icon"/>
             </div>
+            <div class="btn filled">
+                Contato
+            </div>
+            
+        </div>
+      </div>
+
+      <div className="container-fluid">
+        <section className={Styles.heroTeste3 + " heroEmpreendimento"} data-aos="fade-in">
+          <div>
+            <img src="../../images/pop/pop-cover.jpg" className={Styles.heroImg}/>
+          </div>
           <div className={Styles.heroContainer}>
             <div className={Styles.intro}>
                 
                 <div className={Styles.info}>
                     <h1>POP GRAFITE</h1>
+                    <br/>
+                    <span className={Styles.claim}>
+                    O studio perfeito da Idea!Zarvos, com muita luz natural e arquitetura assinada por Tripiyque.
+                    </span>
                     <p class="text-sm">
                     Lançamento · Vila Madalena<br/>
                     <b>
@@ -66,9 +93,7 @@ export default function Home() {
                         Arquitetura Triptyque
                     </b>
                     </p>
-                    <p className={Styles.claim}>
-                    O studio perfeito da Idea!Zarvos, com muita luz natural e arquitetura assinada por Tripiyque.
-                    </p>
+                    
                     <div className={Styles.estoque} id="accordion-pd">
                     <div className={Styles.heading} onClick={toggleState} id="list-heading">
                         <span>
@@ -105,12 +130,12 @@ export default function Home() {
                     </div>
                 </div>
                 <div className={Styles.action}>
-                <div class="btn filled">
-                    Contato
-                </div>
-                <div class="btn ghost">
-                    <img src="../../images/icon/share.svg" class="icon"/> Compartilhar
-                </div>
+                  <div class="btn filled">
+                      Contato
+                  </div>
+                  <div class="btn ghost">
+                      <img src="../../images/icon/share.svg" class="icon"/> Compartilhar
+                  </div>
               </div>
             </div>
           </div>
@@ -121,12 +146,15 @@ export default function Home() {
 
       <div class="container">
 
-        <section class="col-9" data-aos="fade-in">
+        <section class="col-8" data-aos="fade-in">
             <h2>
               Perfeito porque fica entre a Vila Madalena e Pinheiros. Perfeito porque tem studios de 27m² a 36m² com muita luz natural. Perfeito porque tem piscina e academia na cobertura, e porque tem arquitetura assinada por Triptyque.
             </h2>
+            <div class="btn filled teaser">
+              <img src="../../images/icon/tour.svg" class="icon"/>Tour virtal
+            </div>
             <div class="btn outline teaser">
-              <img src="../../images/icon/play.svg" class="icon"/>Assista ao teaser
+              <img src="../../images/icon/play.svg" class="icon"/>Teaser
             </div>
             <p>
               Todas os studios têm caixilhos piso-teto e varandas privativas que aumentam a área útil e criam amplitude e conexão com o exterior. Os arquitetos buscaram valorizar os studios com amplas janelas e ventilação direta, natural.
@@ -145,12 +173,9 @@ export default function Home() {
             <div class="btn outline">
               <img src="../../images/icon/gallery.svg" class="icon"/>Galeria de imagens
             </div>
-            <div class="btn">
-              <img src="../../images/icon/play.svg" class="icon"/>Assista ao tour virtal
-            </div>
           </section>
 
-          <section class="col-9" data-aos="fade-in">
+          <section class="col-8" data-aos="fade-in">
             <h2>
               A fachada se torna arte através da dinâmica entre os painéis metálicos perfurados e a intervenção artística de Andrés Sandoval, num diálogo com os grafites do Beco do Aprendiz, que fica atrás do POP Grafite.
             </h2>
@@ -172,20 +197,17 @@ export default function Home() {
             <div class="btn outline">
               <img src="../../images/icon/gallery.svg" class="icon"/>Galeria de imagens
             </div>
-            <div class="btn">
-              <img src="../../images/icon/play.svg" class="icon"/>Assista ao tour virtal
-            </div>
           </section>
 
           <section className={Styles.imgContainer} data-aos="fade-in">
             <div class="col-6">
               <h3>
-                Arquitetura<br/>
-                <b>Triptyque Architecture</b>
+                <b>Arquitetura</b><br/>
+                Triptyque Architecture
               </h3>
-              <span class="text-sm">
+              <p class="text-sm">
                 Com foco em uma arquitetura global, a Triptyque Architecture explora as ferramentas que servem a um mundo contemporâneo e sustentável. É assim desde 2000, ano em que a brasileira Carolina Bueno e os franceses Greg Bousquet, Olivier Raffaelli e Guillaume Sibaud aterrissaram no Rio de Janeiro e mesclaram a bossa brasileira e a energia tropical à bagagem histórica adquirida no velho continente. 
-              </span>
+              </p>
             </div>
             <figure className={Styles.figure + " col-6"}>
               <img src="../../images/pop/pop-08.jpg"/>
@@ -294,7 +316,7 @@ export default function Home() {
                       Arquitetura Triptyque
                     </span>
                   </div>
-                  <img src="../../images/icon/plus.svg" class="icon list"/>
+                  
                 </li> 
                 <li>
                   <div>
@@ -304,7 +326,7 @@ export default function Home() {
                   </div>
                   
                 </li>
-                <div class="btn ghost list">
+                <div class="btn ghost list" id={Styles.seemore}>
                   <img src="../../images/icon/plus.svg" class="icon"/> Ver todos os diferenciais e ficha técnica
                 </div>         
               </ol>

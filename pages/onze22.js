@@ -37,6 +37,16 @@ export default function Home() {
   }
 
   
+  useEffect(() => {    
+    window.addEventListener("scroll", function(){
+        if(window.scrollY > 600){
+            document.getElementById("floatHeader").classList.add(Styles.floatHeaderOpen);
+        }else{
+            document.getElementById("floatHeader").classList.remove(Styles.floatHeaderOpen);
+        }
+    });
+},);
+
   return (
 
   <div>
@@ -48,7 +58,19 @@ export default function Home() {
       </Head>
 
       <Header/>
-      
+
+      <div className={Styles.floatHeader} id="floatHeader">
+        <div>ONZE <sup>22</sup></div>
+        <div>
+            
+            <div class="btn ghost">
+                <img src="../../images/icon/share.svg" class="icon"/>
+            </div>
+            <div class="btn filled">
+                Contato
+            </div>
+        </div>
+      </div>
 
       <div className="container-fluid">
        

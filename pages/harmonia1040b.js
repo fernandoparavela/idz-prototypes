@@ -36,17 +36,17 @@ export default function Home() {
       }
   }
 
-  
-  useEffect(() => {    
-    window.addEventListener("scroll", function(){
-        if(window.scrollY > 600){
-            document.getElementById("floatHeader").classList.add(Styles.floatHeaderOpen);
-        }else{
-            document.getElementById("floatHeader").classList.remove(Styles.floatHeaderOpen);
-        }
-    });
-},);
+    useEffect(() => {    
+        window.addEventListener("scroll", function(){
+            if(window.scrollY > 400){
+                document.getElementById("floatHeader").classList.add(Styles.floatHeaderOpen);
+            }else{
+                document.getElementById("floatHeader").classList.remove(Styles.floatHeaderOpen);
+            }
+        });
+    },);
 
+  
   return (
 
   <div>
@@ -62,7 +62,7 @@ export default function Home() {
       <div className={Styles.floatHeader} id="floatHeader">
         <div>HARMONIA <sup>1040</sup></div>
         <div>
-          <div class="btn ghost">
+            <div class="btn ghost">
                 <img src="../../images/icon/share.svg" class="icon"/>
             </div>
             <div class="btn filled">
@@ -74,11 +74,17 @@ export default function Home() {
 
       <div className="container-fluid">
        
-        <section className={Styles.heroTeste4} data-aos="fade-in">
+        <section className={Styles.heroTeste3 + " heroEmpreendimento"} id="hero" data-aos="fade-in">
           
-          <div className={Styles.homeImgLeft}>
+          {/* <div className={Styles.homeImgLeft}>
             <img src="../../images/harmonia1040/harmonia1040-cover.jpg"/>
-          </div> 
+          </div>  */}
+
+        <div className={Styles.mosaic3}>
+            <img src="../../images/harmonia1040/harmonia1040-03.jpg"/>
+            <img src="../../images/harmonia1040/harmonia1040-04.jpg"/>
+            <img src="../../images/harmonia1040/harmonia1040-05.jpg"/>
+        </div>
 
           <div className={Styles.heroContainer}>       
              <div className={Styles.intro}>           

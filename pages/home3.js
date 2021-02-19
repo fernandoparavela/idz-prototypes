@@ -50,9 +50,13 @@ export default function Home() {
       <Header/>
 
 
-      <div className={Styles.homeHero + " container-fluid"}>
-        <section className={Styles.homeHero4} data-aos="fade-in">
-          
+      <div className={"container-fluid"}>
+
+        <section className={Styles.heroTeste4} data-aos="fade-in">
+        <div className={Styles.homeImgLeft}>
+            <img src="../../images/pop/autem-cover.jpg" className={Styles.heroImg}/>
+          </div>    
+
           <div className={Styles.heroContainer}>
             <div className={Styles.intro}>
                 
@@ -62,7 +66,7 @@ export default function Home() {
                         <h1>
                             Autem</h1>
                         <p>
-                        Com arquitetura de Andrade Morettin e paisagismo tropical de Rodrigo Oliveira, o prédio tem vista para o verde do Jardim Europa e unidades duplex privilegiadas por muita luz e ventilação natural.
+                          Com arquitetura de Andrade Morettin e paisagismo tropical de Rodrigo Oliveira, o prédio tem vista para o verde do Jardim Europa e unidades duplex privilegiadas por muita luz e ventilação natural.
                         </p>
                     </div>
                     <div class="btn">
@@ -72,9 +76,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className={Styles.homeImgRight}>
-            <img src="../../images/pop/autem-cover.jpg" className={Styles.heroImg}/>
-          </div>    
+         
 
         </section>
 
